@@ -28,12 +28,12 @@ abline(a=60, b=-1, col="orange", lty=2, lwd=2)
 # C = 180 (Custo Mínimo) => T = 60 - (5/3)B
 abline(a=60, b=-(5/3), col="purple", lty=1, lwd=3)
 
-# 6. Adicionar Legenda (CORRIGIDO)
-# Alterei "topright" para "topleft" e reduzi um pouco o tamanho (cex=0.8)
+# 6. Adicionar Legenda 
 legend("topright", 
        legend=c("Acabamento (R1)", "Carpintaria (R2)", "Demanda (R3)", 
                 "Prod. Mínima (R4)", "Região Viável", "Custo Ótimo (C=180)"),
        col=c("red", "blue", "green", "orange", "grey", "purple"), 
        lty=c(2, 2, 2, 2, 1, 1), 
        lwd=c(1, 1, 1, 2, 10, 3),
+
        cex = 0.9) # <-- Adicionei 'cex = 0.8' para diminuir o tamanho
